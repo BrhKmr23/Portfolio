@@ -3,91 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bharath Kumar | AI Portfolio</title>
+    <title>Bharath Kumar K - AI & ML Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Bharath Kumar K</h1>
-      <p>AI | ML | Deep Learning | Researcher</p>
-      <div class="contact">
-        <a href="mailto:akashbk0037@gmail.com">Email</a>
-        <a href="https://linkedin.com/in/bharath-kmr-k" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/BrhKmr23" target="_blank">GitHub</a>
-      </div>
+      <nav>
+        <div class="logo">Bharath Kumar K</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section class="card glowing">
-        <h2>👋 About Me</h2>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Bharath Kumar K</h1>
+          <p class="tagline">
+            AI & Machine Learning Innovator | Building Intelligent Futures
+          </p>
+          <div class="hero-links">
+            <a
+              href="assets/BharathKumarK_Resume.pdf"
+              target="_blank"
+              class="btn btn-primary"
+              >Download Resume</a
+            >
+            <a href="#projects" class="btn btn-secondary">View My Work</a>
+          </div>
+          <div class="social-icons-hero">
+            <a
+              href="https://linkedin.com/in/bharath-kmr-k"
+              target="_blank"
+              title="LinkedIn"
+              ><img src="assets/icons/linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="https://github.com/Bhrkmr23" target="_blank" title="GitHub"
+              ><img src="assets/icons/github.svg" alt="GitHub"
+            /></a>
+            <a href="mailto:akashbk0037@gmail.com" title="Email"
+              ><img src="assets/icons/email.svg" alt="Email"
+            /></a>
+          </div>
+        </div>
+        <div class="hero-background-animation">
+          <!-- Placeholder for a subtle animation if you add one later -->
+        </div>
+      </section>
+
+      <section id="about" class="container section-padding">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img
+            src="assets/images/your-photo.jpg"
+            alt="Bharath Kumar K"
+            class="profile-pic"
+          />
+          <div class="about-text">
+            <p>
+              Hello! I'm Bharath, an undergraduate Computer Science student at
+              SRM Institute of Science and Technology, deeply passionate about
+              Artificial Intelligence, Machine Learning, Computer Vision, and
+              Large Language Models.
+            </p>
+            <p>
+              I thrive on transforming complex challenges into innovative and
+              practical solutions. My journey involves developing everything
+              from advanced vision systems for skin disease analysis and
+              precision agriculture to intelligent tools like smart navigation
+              glasses for the blind. I'm also actively engaged in the tech
+              community, organizing events and mentoring peers.
+            </p>
+            <p>
+              My goal is to leverage cutting-edge AI to create impactful
+              technologies that make a difference.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="container section-padding">
+        <h2>Skills & Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>AI / Machine Learning</h3>
+            <ul>
+              <li>Computer Vision</li>
+              <li>Deep Learning (CNNs, ViT)</li>
+              <li>LLM Fine Tuning & RAG</li>
+              <li>TensorFlow, PyTorch</li>
+              <li>Keras Tuner</li>
+              <li>OpenCV</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Development & Tools</h3>
+            <ul>
+              <li>Python</li>
+              <li>Docker</li>
+              <li>Git & GitHub</li>
+              <li>Data Analysis (Pandas, NumPy)</li>
+              <li>API Integration (OpenAI)</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Platforms & Other</h3>
+            <ul>
+              <li>Edge Computing</li>
+              <li>IoT Sensor Integration</li>
+              <li>Research & Development</li>
+              <li>Communication</li>
+              <li>Team Leadership</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container section-padding">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <img
+              src="assets/images/project_thumb_skin_disease.jpg"
+              alt="Multimodal Skin Disease Analysis"
+            />
+            <h3>Multimodal Skin Disease Analysis</h3>
+            <p class="project-tech">Python, TensorFlow, ViT, Docker</p>
+            <p>
+              Achieved 86.2% accuracy in skin lesion classification using custom
+              ViT and patient data. Developed disease progression modeling.
+            </p>
+            <span class="project-highlight">Nature Under Review</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/Bhrkmr23/YourSkinDiseaseProjectRepo"
+                target="_blank"
+                class="btn-link"
+                >GitHub</a
+              >
+              <!-- <a href="#" target="_blank" class="btn-link">Live Demo</a> -->
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img
+              src="assets/images/project_thumb_agriculture.jpg"
+              alt="Precision Agriculture Assistant"
+            />
+            <h3>Precision Agriculture Assistant</h3>
+            <p class="project-tech">Docker, IoT, YOLOv11, LLAMA 3.1</p>
+            <p>
+              Autonomous drone system for pest/disease detection (83% accuracy)
+              & yield estimation. LLAMA 3.1 for farmer alerts.
+            </p>
+            <span class="project-highlight">Hackathon 1st Place</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/Bhrkmr23/YourAgriProjectRepo"
+                target="_blank"
+                class="btn-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <img
+              src="assets/images/project_thumb_women_safety.jpg"
+              alt="Women Safety System"
+            />
+            <h3>AI for Women Safety & Surveillance</h3>
+            <p class="project-tech">YOLOv9, OpenPose, Edge Computing</p>
+            <p>
+              Real-time threat detection (92% gender classification accuracy,
+              20+ FPS on edge) using a 3-model pipeline.
+            </p>
+            <span class="project-highlight">SIH 2024</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/Bhrkmr23/YourSafetyProjectRepo"
+                target="_blank"
+                class="btn-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <img
+              src="assets/images/project_thumb_echo_vision.jpg"
+              alt="Echo-Vision Smart Glasses"
+            />
+            <h3>Echo-Vision: Smart Glasses for Blind</h3>
+            <p class="project-tech">Python, LiDAR, PaddleOCR, PyTorch</p>
+            <p>
+              AI-powered glasses for obstacle detection, GPS navigation, and
+              text recognition (76% improved accuracy).
+            </p>
+            <span class="project-highlight">IEEE Epics Funded ($910)</span>
+            <div class="project-links">
+              <a
+                href="https://github.com/Bhrkmr23/YourEchoVisionProjectRepo"
+                target="_blank"
+                class="btn-link"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container section-padding">
+        <h2>Get In Touch</h2>
         <p>
-          I'm a passionate AI & ML engineer with hands-on experience in vision
-          transformers, LLMs, and real-world AI deployments.
+          I'm always excited to discuss new projects, collaborations, or
+          opportunities in AI and tech. Feel free to reach out!
         </p>
-      </section>
-
-      <section class="card">
-        <h2>🎓 Education</h2>
-        <ul>
-          <li><strong>B.Tech, SRM IST (AI & ML)</strong> – 9.33 CGPA</li>
-          <li>12th CBSE – 72.4%</li>
-          <li>10th State Board – 98%</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>🛠️ Skills</h2>
-        <div class="skills">
-          <span>Python</span><span>TensorFlow</span><span>PyTorch</span
-          ><span>Computer Vision</span> <span>LLMs</span><span>Docker</span
-          ><span>Data Analysis</span><span>Team Leadership</span>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>📂 Projects</h2>
-        <div class="accordion">
-          <button>Multimodal Skin Disease Analysis</button>
-          <div class="panel">
-            <p>
-              Used ViT, patient data fusion, and progression modeling to
-              simulate skin disease stages.
-            </p>
-          </div>
-
-          <button>Precision Agriculture Assistant</button>
-          <div class="panel">
-            <p>
-              Deployed drone + AI pipeline for pest detection, NPK sensing, and
-              agro alerting.
-            </p>
-          </div>
-
-          <button>Women Safety System</button>
-          <div class="panel">
-            <p>
-              YOLOv9 + OpenPose + real-time gender classification for street
-              surveillance.
-            </p>
+        <div class="contact-methods">
+          <a href="mailto:akashbk0037@gmail.com" class="btn btn-primary"
+            >akashbk0037@gmail.com</a
+          >
+          <div class="social-icons-contact">
+            <a
+              href="https://linkedin.com/in/bharath-kmr-k"
+              target="_blank"
+              title="LinkedIn"
+              ><img src="assets/icons/linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="https://github.com/Bhrkmr23" target="_blank" title="GitHub"
+              ><img src="assets/icons/github.svg" alt="GitHub"
+            /></a>
           </div>
         </div>
-      </section>
-
-      <section class="card">
-        <h2>🏆 Achievements</h2>
-        <ul>
-          <li>1st – Solve X AI Hackathon</li>
-          <li>8th – NAF Uzhavu Hackathon @ IITM</li>
-          <li>6+ Nvidia Certs</li>
-          <li>Andrew Ng ML (Coursera)</li>
-        </ul>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2025 Bharath Kumar. Built with ❤️ using HTML, CSS & JS.</p>
+      <p>
+        © <span id="currentYear"></span> Bharath Kumar K. All rights reserved.
+      </p>
+      <p>
+        Designed with <span class="heart">❤</span> and a dash of AI enthusiasm.
+      </p>
     </footer>
 
     <script src="script.js"></script>
